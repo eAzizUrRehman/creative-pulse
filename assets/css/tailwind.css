@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo-white {
+    filter: grayscale(100%) brightness(200%);
+  }
+  .logo-black {
+    filter: grayscale(100%);
+  }
+  .white {
+    filter: grayscale(100%) brightness(200%);
+  }
+  .black {
+    filter: grayscale(100%);
+  }
+  .dim {
+    @apply opacity-70;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .container-10x {
+    @apply max-w-[1220px] mx-auto px-5;
+  }
+  .container-9x {
+    @apply max-w-[780px] mx-auto px-10;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#94a3b8] rounded-full;
+  }
+  ::-webkit-scrollbar-track:hover {
+    @apply bg-white;
+  }
+  .gradient-color {
+    background: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
+  }
+}

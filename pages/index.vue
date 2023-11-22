@@ -1,0 +1,8 @@
+<template>
+  <div class="w-full h-[100vh] bg-red-500">AAAAAA</div>
+</template>
+<script>
+export default {
+  computed: {},
+};
+</script>
