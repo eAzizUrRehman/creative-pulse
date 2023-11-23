@@ -16,8 +16,17 @@ module.exports = {
       colors: {
         "primary-color": "#666666",
       },
+      placeholderColor: {
+        'white': '#ffffff',
+      },
     },
   },
-
-  plugins: [],
+  variants: {
+    extend: {
+      placeholderColor: ['active', 'focus'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };

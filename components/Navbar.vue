@@ -83,29 +83,26 @@ export default {
         window.scrollY || document.documentElement.scrollTop;
       this.showQuickLinks = scrollPosition >= 100;
     },
-    methods: {
-      addClickListener() {
-        window.addEventListener("click", this.closeDropdown);
-      },
-      removeClickListener() {
-        window.removeEventListener("click", this.closeDropdown);
-      },
-    },
+    // addClickListener() {
+    //   window.addEventListener("click", this.closeDropdown);
+    // },
+    // removeClickListener() {
+    //   window.removeEventListener("click", this.closeDropdown);
+    // },
   },
   watch: {
-    showDropdown(val) {
-      if (val) {
-        this.showDropdown = true;
-        this.addClickListener();
-      } else {
-        this.showDropdown = false;
-        this.removeClickListener();
-      }
-    },
+    // showDropdown(val) {
+    //   if (val) {
+    //     this.showDropdown = true;
+    //     this.addClickListener();
+    //   } else {
+    //     this.showDropdown = false;
+    //     this.removeClickListener();
+    //   }
+    // },
   },
   computed: {
     quickLinks() {
-      console.log(this.$store.state.quickLinks);
       return this.$store.state.quickLinks;
     },
   },
@@ -131,7 +128,7 @@ export default {
 .fade-leave-to {
   transform: translateY(-100%);
 }
-.download-hero-gradient-color {
+.download-hero-green-gradient {
   background: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
 }
 </style>

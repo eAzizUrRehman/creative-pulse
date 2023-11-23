@@ -40,7 +40,22 @@
   ::-webkit-scrollbar-track:hover {
     @apply bg-white;
   }
-  .gradient-color {
+  .green-gradient {
     background: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
+  }
+  .red-gradient {
+    background: linear-gradient(-45deg, #a91823 0%, #ff3545 100%);
+  }
+  .dark-blue-gradient {
+    background: linear-gradient(-45deg, #931aded4 0%, #1cceead1 100%);
+  }
+  .light-blue-gradient {
+    background: linear-gradient(-45deg, #0c9ed4 0%, #51c9f5 100%);
+  }
+  .black-gradient {
+    background: linear-gradient(-45deg, #151515 0%, #3c3c3c 100%);
+  }
+  .orange-gradient {
+    background: linear-gradient(-45deg, #ea472d 0%, #f18472 100%);
   }
 }

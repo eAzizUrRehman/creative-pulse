@@ -20,8 +20,8 @@ export default [
   {
     id: 1,
     label: "Search",
-    iconUrl: outerSearchIcon,
     dropdowns: null,
+    iconUrl: outerSearchIcon,
   },
   {
     id: 2,
