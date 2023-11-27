@@ -41,21 +41,36 @@
     @apply bg-white;
   }
   .green-gradient {
-    background: linear-gradient(-45deg, #209077 0%, #1ae28a 100%);
-  }
-  .red-gradient {
-    background: linear-gradient(-45deg, #a91823 0%, #ff3545 100%);
-  }
-  .dark-blue-gradient {
-    background: linear-gradient(-45deg, #931aded4 0%, #1cceead1 100%);
+    background: linear-gradient(-45deg, #006644 0%, #009966 100%);
   }
   .light-blue-gradient {
-    background: linear-gradient(-45deg, #0c9ed4 0%, #51c9f5 100%);
+    background: linear-gradient(-45deg, #0066cc 0%, #0099cc 100%);
   }
   .black-gradient {
-    background: linear-gradient(-45deg, #151515 0%, #3c3c3c 100%);
+    background: linear-gradient(-45deg, #000000 0%, #333333 100%);
   }
-  .orange-gradient {
-    background: linear-gradient(-45deg, #ea472d 0%, #f18472 100%);
+  .purple-gradient {
+    background: linear-gradient(-45deg, #660066 0%, #cc99cc 100%);
+  }
+  .teal-gradient {
+    background: linear-gradient(-45deg, #006666 0%, #339999 100%);
+  }
+  .indigo-gradient {
+    background: linear-gradient(-45deg, #330066 0%, #9966cc 100%);
+  }
+  .dark-gray-gradient {
+    background: linear-gradient(-45deg, #2f4f4f 0%, #696969 100%);
+  }
+  .midnight-gradient {
+    background: linear-gradient(-45deg, #191970 0%, #000080 100%);
+  }
+  .ebony-gradient {
+    background: linear-gradient(-45deg, #555d50 0%, #283618 100%);
+  }
+  .charcoal-gradient {
+    background: linear-gradient(-45deg, #36454f 0%, #000000 100%);
+  }
+  .onyx-gradient {
+    background: linear-gradient(-45deg, #0f0f0f 0%, #3e3e3e 100%);
   }
 }

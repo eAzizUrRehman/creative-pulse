@@ -21,16 +21,19 @@ import {
   nodejsIcon,
   aspnetIcon,
 } from "@/assets/images";
+
+
+
 export default [
   {
-    id: 1,
+    id: 21,
     label: "Front-End",
     links: [
       {
-        id: 1,
+        id: 211,
         links: [
           {
-            id: 1,
+            id: 2111,
             label: "Tailwind CSS",
             iconUrl: tailwindCSSIcon,
             content: {
@@ -41,7 +44,7 @@ export default [
             url: "/",
           },
           {
-            id: 2,
+            id: 2112,
             label: "Bootstrap",
             iconUrl: bootstrapIcon,
             content: {
@@ -52,7 +55,7 @@ export default [
             url: "/",
           },
           {
-            id: 3,
+            id: 2113,
             label: "Angular",
             iconUrl: angularIcon,
             content: {
@@ -63,7 +66,7 @@ export default [
             url: "/",
           },
           {
-            id: 4,
+            id: 2114,
             label: "React",
             iconUrl: reactIcon,
             content: {
@@ -74,7 +77,7 @@ export default [
             url: "/",
           },
           {
-            id: 5,
+            id: 2115,
             label: "Vue.js",
             iconUrl: vuejsIcon,
             content: {
@@ -85,7 +88,7 @@ export default [
             url: "/",
           },
           {
-            id: 6,
+            id: 2116,
             label: "React Native",
             iconUrl: reactNativeIcon,
             content: {
@@ -96,7 +99,7 @@ export default [
             url: "/",
           },
           {
-            id: 7,
+            id: 2117,
             label: "Svelte",
             iconUrl: svelteIcon,
             content: {
@@ -109,10 +112,10 @@ export default [
         ],
       },
       {
-        id: 2,
+        id: 212,
         links: [
           {
-            id: 1,
+            id: 2121,
             label: "Material UI",
             iconUrl: materialUIIcon,
             content: {
@@ -123,7 +126,7 @@ export default [
             url: "/",
           },
           {
-            id: 2,
+            id: 2122,
             label: "Vuetify",
             iconUrl: vuetifyIcon,
             content: {
@@ -134,7 +137,7 @@ export default [
             url: "/",
           },
           {
-            id: 3,
+            id: 2123,
             label: "Flutter",
             iconUrl: flutterIcon,
             content: {
@@ -145,7 +148,7 @@ export default [
             url: "/",
           },
           {
-            id: 4,
+            id: 2124,
             label: "Vue Material",
             iconUrl: vueMaterialIcon,
             content: {
@@ -156,7 +159,7 @@ export default [
             url: "/",
           },
           {
-            id: 5,
+            id: 2125,
             label: "Reactstrap",
             iconUrl: reactstrapIcon,
             content: {
@@ -167,7 +170,7 @@ export default [
             url: "/",
           },
           {
-            id: 6,
+            id: 2126,
             label: "React Bootstrap",
             iconUrl: reactBootstrapIcon,
             content: {
@@ -178,7 +181,7 @@ export default [
             url: "/",
           },
           {
-            id: 7,
+            id: 2127,
             label: "Vue Bootstrap",
             iconUrl: vueBootstrapIcon,
             content: {
@@ -193,14 +196,14 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 22,
     label: "Back-End",
     links: [
       {
-        id: 1,
+        id: 221,
         links: [
           {
-            id: 1,
+            id: 2211,
             label: "Laravel",
             iconUrl: laravelIcon,
             content: {
@@ -211,7 +214,7 @@ export default [
             url: "/",
           },
           {
-            id: 2,
+            id: 2212,
             label: "Django",
             iconUrl: djangoIcon,
             content: {
@@ -222,7 +225,7 @@ export default [
             url: "/",
           },
           {
-            id: 3,
+            id: 2213,
             label: "Flask",
             iconUrl: flaskIcon,
             content: {
@@ -233,7 +236,7 @@ export default [
             url: "/",
           },
           {
-            id: 4,
+            id: 2214,
             label: "Next",
             iconUrl: nextIcon,
             content: {
@@ -244,7 +247,7 @@ export default [
             url: "/",
           },
           {
-            id: 5,
+            id: 2215,
             label: "Nuxt",
             iconUrl: nuxtIcon,
             content: {
@@ -255,7 +258,7 @@ export default [
             url: "/",
           },
           {
-            id: 6,
+            id: 2216,
             label: "Node.js",
             iconUrl: nodejsIcon,
             content: {
@@ -266,7 +269,7 @@ export default [
             url: "/",
           },
           {
-            id: 7,
+            id: 2217,
             label: "Aspnet",
             iconUrl: aspnetIcon,
             content: {

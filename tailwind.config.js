@@ -14,19 +14,17 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "primary-color": "#666666",
+        primary: "#666666",
       },
       placeholderColor: {
-        'white': '#ffffff',
+        white: "#ffffff",
       },
     },
   },
   variants: {
     extend: {
-      placeholderColor: ['active', 'focus'],
+      placeholderColor: ["active", "focus"],
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };

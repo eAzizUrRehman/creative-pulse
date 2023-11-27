@@ -1,14 +1,8 @@
 <template>
   <a
     :href="href"
-    class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2"
-    :style="{
-      backgroundColor: bgColor ? '#' + bgColor : '#00000000',
-      color: color ? '#' + color : '#ffffff',
-      border: borderColor
-        ? '1px solid #' + borderColor
-        : '1px solid #' + bgColor,
-    }"
+    class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[1px] text-white"
+    :class="gradient"
   >
     <img
       loading="lazy"
@@ -26,6 +20,10 @@
 export default {
   props: {
     text: {
+      type: String,
+      required: true,
+    },
+    gradient: {
       type: String,
       required: true,
     },

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-[100vh] bg-red-500">AAAAAA</div>
+  <div class="w-full mx-auto text-center my-20">Content is coming soon...</div>
 </template>
 <script>
 export default {

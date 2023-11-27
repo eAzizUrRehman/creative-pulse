@@ -8,8 +8,8 @@
           alt=""
           width="40"
           :class="{
-            'logo-black': showQuickLinks,
-            'logo-white': !showQuickLinks,
+            'logo-black': pinNavbar,
+            'logo-white': !pinNavbar,
           }"
         />
         <router-link to="/" class="max-w-[5rem] ml-2 text-md tracking-wide">
@@ -20,7 +20,7 @@
         <ul v-for="links in quickLinks.links" :key="links.id">
           <li
             class="flex-center flex-col gap-2 text-xs cursor-pointer relative min-w-lg"
-            @click="activeDropdownId = links.id"
+            @click="handleDropdown(links)"
           >
             <img
               loading="lazy"
@@ -28,8 +28,8 @@
               alt=""
               width="20"
               :class="{
-                black: showQuickLinks,
-                white: !showQuickLinks,
+                black: pinNavbar,
+                white: !pinNavbar,
               }"
             />
             <span>
@@ -43,10 +43,14 @@
               />
             </span>
             <div
-              v-if="activeDropdownId === links.id"
+              v-if="activeId === links.id && links.dropdowns !== null"
               class="absolute top-12 transition-all duration-500 ease-in-out"
             >
-              <Dropdown :links="links" />
+              <Dropdown
+                @grab-id="handleId"
+                :links="links"
+                :gradient="gradient"
+              />
             </div>
           </li>
         </ul>
@@ -60,17 +64,21 @@ import Dropdown from "@/components/Dropdown.vue";
 import { logo } from "@/assets/images";
 
 export default {
-  // @mouseover="activeDropdownId = links.id"
-  // @mouseleave="activeDropdownId = null"
+  // @mouseover="activeId = links.id"
+  // @mouseleave="activeId = null"
   data() {
     return {
-      activeDropdownId: null,
+      activeId: null,
       logo,
     };
   },
   props: {
-    showQuickLinks: {
+    pinNavbar: {
       type: Boolean,
+      required: true,
+    },
+    gradient: {
+      type: String,
       required: true,
     },
   },
@@ -78,10 +86,24 @@ export default {
     Dropdown,
   },
   methods: {
+    handleDropdown(links) {
+      if (this.activeId === links.id) {
+        this.activeId = null;
+      } else {
+        this.activeId = links.id;
+      }
+      if(links.label === 'Search'){
+        this.$emit('searchClicked')
+      }
+    },
+    handleId(id) {
+      this.activeId = id;
+      this.$emit("grab-id", id);
+    },
     handleScroll() {
       const scrollPosition =
         window.scrollY || document.documentElement.scrollTop;
-      this.showQuickLinks = scrollPosition >= 100;
+      this.pinNavbar = scrollPosition >= 100;
     },
     // addClickListener() {
     //   window.addEventListener("click", this.closeDropdown);
@@ -107,14 +129,13 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    // window.addEventListener("scroll", this.handleScroll);
   },
-
   beforeDestroy() {
-    this.removeClickListener();
+    // this.removeClickListener();
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    // window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>

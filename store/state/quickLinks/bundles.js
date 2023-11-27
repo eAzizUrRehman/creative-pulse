@@ -11,14 +11,14 @@ import {
 
 export default [
   {
-    id: 1,
+    id: 41,
     label: "Bundles",
     links: [
       {
-        id: 1,
+        id: 411,
         links: [
           {
-            id: 1,
+            id: 4111,
             label: "Big Bundle",
             iconUrl: bigBundleIcon,
             content: {
@@ -28,7 +28,7 @@ export default [
             url: "/",
           },
           {
-            id: 2,
+            id: 4112,
             label: "React Bundle",
             iconUrl: reactIcon,
             content: {
@@ -38,7 +38,7 @@ export default [
             url: "/",
           },
           {
-            id: 3,
+            id: 4113,
             label: "Tailwind Bundle",
             iconUrl: tailwindCSSIcon,
             content: {
@@ -48,7 +48,7 @@ export default [
             url: "/",
           },
           {
-            id: 4,
+            id: 4114,
             label: "Vuejs Bundle",
             iconUrl: vuejsIcon,
             content: {
@@ -58,7 +58,7 @@ export default [
             url: "/",
           },
           {
-            id: 5,
+            id: 4115,
             label: "Angular Bundle",
             iconUrl: angularIcon,
             content: {
@@ -68,7 +68,7 @@ export default [
             url: "/",
           },
           {
-            id: 6,
+            id: 4116,
             label: "Laravel Bundle",
             iconUrl: laravelIcon,
             content: {
@@ -78,7 +78,7 @@ export default [
             url: "/",
           },
           {
-            id: 7,
+            id: 4117,
             label: "Bootstrap Bundle",
             iconUrl: bootstrapIcon,
             content: {
@@ -88,7 +88,7 @@ export default [
             url: "/",
           },
           {
-            id: 8,
+            id: 4118,
             label: "Mobile Bundle",
             iconUrl: reactNativeIcon,
             content: {

@@ -1,13 +1,13 @@
 export default [
   {
-    id: 1,
+    id: 51,
     label: "Bootstrap",
     links: [
       {
-        id: 1,
+        id: 511,
         links: [
           {
-            id: 1,
+            id: 5111,
             label: "Admin & Dashboards",
             content: {
               title: "Bootstrap Admin Templates",
@@ -17,7 +17,7 @@ export default [
             url: "/",
           },
           {
-            id: 2,
+            id: 5112,
             label: "Free Themes",
             content: {
               title: "Free Bootstrap Templates",
@@ -27,7 +27,7 @@ export default [
             url: "/",
           },
           {
-            id: 3,
+            id: 5113,
             label: "Premium Themes",
             content: {
               title: "Premium Bootstrap Templates",
@@ -37,7 +37,7 @@ export default [
             url: "/",
           },
           {
-            id: 4,
+            id: 5114,
             label: "UI Kits",
             content: {
               title: "UI Kits",
@@ -47,7 +47,7 @@ export default [
             url: "/",
           },
           {
-            id: 5,
+            id: 5115,
             label: "Landing Pages",
             content: {
               title: "Bootstrap Landing Page",
@@ -57,7 +57,7 @@ export default [
             url: "/",
           },
           {
-            id: 6,
+            id: 5116,
             label: "E-Commerce",
             content: {
               title: "Bootstrap E-commerce Templates",
@@ -67,7 +67,7 @@ export default [
             url: "/",
           },
           {
-            id: 7,
+            id: 5117,
             label: "One Page Themes",
             content: {
               title: "Bootstrap One Page Templates",
@@ -77,7 +77,7 @@ export default [
             url: "/",
           },
           {
-            id: 8,
+            id: 5118,
             label: "Login Forms",
             content: {
               title: "Bootstrap Login Form",
@@ -87,7 +87,7 @@ export default [
             url: "/",
           },
           {
-            id: 9,
+            id: 5119,
             label: "Wizards",
             content: {
               title: "Bootstrap Wizards",
@@ -97,7 +97,7 @@ export default [
             url: "/",
           },
           {
-            id: 10,
+            id: 51110,
             label: "Calendar",
             content: {
               title: "Bootstrap Calendar",
