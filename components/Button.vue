@@ -1,7 +1,7 @@
 <template>
   <a
     :href="href"
-    class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[1px] text-white"
+    class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[1px] text-white cursor-pointer"
     :class="gradient"
   >
     <img

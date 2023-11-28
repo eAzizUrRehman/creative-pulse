@@ -19,10 +19,14 @@
       />
       <div
         id="search-btn"
-        class="w-10 h-10 rounded-full absolute right-3 top-2 border-[1px] flex-center"
+        class="w-10 h-10 rounded-full absolute right-3 top-2 border-[1px] flex-center cursor-pointer"
         :class="gradient"
       >
-        <img src="@/assets/images/icons/search-icon.svg" alt="" width="20" />
+        <img
+          src="@/assets/images/quick-links/outer/search-icon.svg"
+          alt=""
+          width="20"
+        />
       </div>
     </div>
   </section>

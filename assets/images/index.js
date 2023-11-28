@@ -4,17 +4,24 @@ export { default as logo } from "./logo.png";
 export { default as starIcon } from "./icons/star-icon.svg";
 export { default as licenceIcon } from "./icons/licence-icon.svg";
 
-export { default as outerSearchIcon } from "./icons/search-icon.svg";
-export { default as outerTechnologiesIcon } from "./icons/technologies-icon.svg";
-export { default as outerDesignSystemsIcon } from "./icons/design-systems-icon.svg";
-export { default as outerBundlesIcon } from "./icons/bundles-icon.svg";
-export { default as outerBootstrapIcon } from "./icons/bootstrap-icon.svg";
-export { default as outerResourcesIcon } from "./icons/resources-icon.svg";
-export { default as outerBlogIcon } from "./icons/blog-icon.svg";
-export { default as outerLoginOrRegisterIcon } from "./icons/login-or-register-icon.svg";
-
 // quick-links
 export { default as dropdownIcon } from "./quick-links/dropdown-icon.svg";
+
+// quick-links/outer
+export { default as outerSearchIcon } from "./quick-links/outer/search-icon.svg";
+export { default as outerTechnologiesIcon } from "./quick-links/outer/technologies-icon.svg";
+export { default as outerDesignSystemsIcon } from "./quick-links/outer/design-systems-icon.svg";
+export { default as outerBundlesIcon } from "./quick-links/outer/bundles-icon.svg";
+export { default as outerBootstrapIcon } from "./quick-links/outer/bootstrap-icon.svg";
+export { default as outerResourcesIcon } from "./quick-links/outer/resources-icon.svg";
+export { default as outerBlogIcon } from "./quick-links/outer/blog-icon.svg";
+export { default as outerLoginOrRegisterIcon } from "./quick-links/outer/login-or-register-icon.svg";
+
+// quick-links/inner
+export { default as innerDesignSystemsIcon } from "./quick-links/inner/design-systems-icon.svg";
+export { default as innerBundlesIcon } from "./quick-links/inner/bundles-icon.svg";
+export { default as innerBootstrapIcon } from "./quick-links/inner/bootstrap-icon.svg";
+export { default as innerResourcesIcon } from "./quick-links/inner/resources-icon.svg";
 
 // quick-links/technologies/front-end/column-1
 export { default as tailwindCSSIcon } from "./quick-links/technologies/front-end/tailwindCSS-icon.jpg";

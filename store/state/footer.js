@@ -177,7 +177,7 @@ export default {
         },
         {
           id: 10,
-          label: "Made with Creative Tim",
+          label: "Made with Creative Pulse",
           url: "/",
         },
       ],
@@ -223,5 +223,5 @@ export default {
     },
   ],
   copyright:
-    "© 2023 Creative Tim, all rights reserved. Made with ❤️ for a better web.",
+    "© 2023 Creative Pulse, all rights reserved. Made with ❤️ for a better web.",
 };

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-Poppins">
+  <div class="font-Poppins ">
     <div :class="gradient">
       <div class="w-full fixed top-0 left-0 z-50">
         <transition name="fade">

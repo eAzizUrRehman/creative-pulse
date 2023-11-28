@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-10 h-10 p-2.5 rounded-full border-[1px] border-white cursor-pointer hover:opacity-50 opacity-80"
+    class="w-10 h-10 p-2.5 rounded-full border-[1px] border-white cursor-pointer hover:opacity-100 opacity-60"
   >
     <a :href="url">
       <img

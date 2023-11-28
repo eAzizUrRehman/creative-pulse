@@ -40,7 +40,9 @@
             {{ column.label }}
           </p>
           <ul v-for="link in column.links" :key="link.id" class="">
-            <li class="mt-2 text-footer-text-color text-sm hover:text-white">
+            <li
+              class="mt-2 text-footer-text-color text-sm text-white hover:opacity-100 opacity-80"
+            >
               <a :href="link.url">
                 {{ link.label }}
               </a>
@@ -49,13 +51,20 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[0.6px] opacity-20 bg-footer-text-color"></div>
+    <div class="w-full h-[0.6px] opacity-20 bg-white"></div>
     <div class="my-20 mx-auto">
       <div class="flex-center flex-col gap-1">
-        <img loading="lazy" :src="footer.logo" alt="" class="logo-white w-10" />
-        <h3 class="text-xs tracking-wider">
-          {{ footer.title }}
-        </h3>
+        <div class="flex-center flex-col gap-1 hover:opacity-100 opacity-60 ">
+          <img
+            loading="lazy"
+            :src="footer.logo"
+            alt=""
+            class="logo-white w-10 cursor-pointer"
+          />
+          <h3 class="text-xs tracking-wider cursor-pointer">
+            {{ footer.title }}
+          </h3>
+        </div>
         <div class="mt-4 flex-center gap-2">
           <div v-for="handle in footer.socialMedia" :key="handle.id">
             <FooterIcon
@@ -65,7 +74,7 @@
             />
           </div>
         </div>
-        <p class="mt-8 text-xs tracking-wider">
+        <p class="mt-8 text-xs tracking-wider opacity-60">
           {{ footer.copyright }}
         </p>
       </div>

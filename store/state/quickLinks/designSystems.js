@@ -1,9 +1,11 @@
-import { bigBundleIcon } from "@/assets/images";
+import { bigBundleIcon, innerDesignSystemsIcon } from "@/assets/images";
+import randomNumber from "./functions/randomNumber.js";
 
 export default [
   {
     id: 31,
     label: "Design Systems",
+    iconUrl: innerDesignSystemsIcon,
     links: [
       {
         id: 311,
@@ -14,8 +16,7 @@ export default [
             label: "Soft Design",
             content: {
               title: "Soft UI Design System",
-              description:
-                "Download the best Soft UI Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Soft UI Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -24,8 +25,7 @@ export default [
             label: "Argon Design",
             content: {
               title: "Argon Design System",
-              description:
-                "Download the best Argon Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Argon Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -34,8 +34,7 @@ export default [
             label: "Black Design",
             content: {
               title: "Black Design System",
-              description:
-                "Download the best Black Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Black Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -44,8 +43,7 @@ export default [
             label: "Light Design",
             content: {
               title: "Light Design System",
-              description:
-                "Download the best Light Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Light Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -54,8 +52,7 @@ export default [
             label: "Material Design",
             content: {
               title: "Material Design System",
-              description:
-                "Download the best Material Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Material Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -64,8 +61,7 @@ export default [
             label: "Now UI Design",
             content: {
               title: "Now UI Design System",
-              description:
-                "Download the best Now UI Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Now UI Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -74,8 +70,7 @@ export default [
             label: "Paper Design",
             content: {
               title: "Paper Design System",
-              description:
-                "Download the best Paper Design System developed by Creative Tim. Join over 2,367,114 creatives that already love our bootstrap resources!",
+              description: `Download the best Paper Design System developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },

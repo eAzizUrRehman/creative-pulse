@@ -1,4 +1,5 @@
 import {
+  innerBundlesIcon,
   bigBundleIcon,
   reactIcon,
   tailwindCSSIcon,
@@ -8,11 +9,13 @@ import {
   bootstrapIcon,
   reactNativeIcon,
 } from "@/assets/images";
+import randomNumber from "./functions/randomNumber.js";
 
 export default [
   {
     id: 41,
     label: "Bundles",
+    iconUrl: innerBundlesIcon,
     links: [
       {
         id: 411,
@@ -22,8 +25,8 @@ export default [
             label: "Big Bundle",
             iconUrl: bigBundleIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Big Bundle Templates",
+              description: `Download the best Big Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -32,8 +35,8 @@ export default [
             label: "React Bundle",
             iconUrl: reactIcon,
             content: {
-              title: "",
-              description: "",
+              title: "React Bundle Templates",
+              description: `Download the best React Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -42,8 +45,8 @@ export default [
             label: "Tailwind Bundle",
             iconUrl: tailwindCSSIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Tailwind Bundle Templates",
+              description: `Download the best Tailwind Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -52,8 +55,8 @@ export default [
             label: "Vuejs Bundle",
             iconUrl: vuejsIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Vuejs Bundle Templates",
+              description: `Download the best Vuejs Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -62,8 +65,8 @@ export default [
             label: "Angular Bundle",
             iconUrl: angularIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Angular Bundle Templates",
+              description: `Download the best Angular Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -72,8 +75,8 @@ export default [
             label: "Laravel Bundle",
             iconUrl: laravelIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Laravel Bundle Templates",
+              description: `Download the best Laravel Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -82,8 +85,8 @@ export default [
             label: "Bootstrap Bundle",
             iconUrl: bootstrapIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Bootstrap Bundle Templates",
+              description: `Download the best Bootstrap Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -92,8 +95,8 @@ export default [
             label: "Mobile Bundle",
             iconUrl: reactNativeIcon,
             content: {
-              title: "",
-              description: "",
+              title: "Mobile Bundle Templates",
+              description: `Download the best Mobile Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },

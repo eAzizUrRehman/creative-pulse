@@ -1,7 +1,11 @@
+import { innerResourcesIcon } from "@/assets/images";
+import randomNumber from "./functions/randomNumber.js";
+
 export default [
   {
     id: 61,
     label: "Useful Tools",
+    iconUrxl: innerResourcesIcon,
     links: [
       {
         id: 611,
@@ -11,8 +15,8 @@ export default [
             label: "Book - Fundamentals UI/UX",
             tag: "",
             content: {
-              title: "",
-              description: "",
+              title: "Book - Fundamentals UI/UX Resource",
+              description: `Download the best Book - Fundamentals UI/UX developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -20,8 +24,8 @@ export default [
             id: 6112,
             label: "Drag & Drop Builders",
             content: {
-              title: "",
-              description: "",
+              title: "Drag & Drop Builders Resource",
+              description: `Download the best Drag & Drop Builders developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -29,8 +33,8 @@ export default [
             id: 6113,
             label: "AI Code Mentor",
             content: {
-              title: "",
-              description: "",
+              title: "AI Code Mentor Resource",
+              description: `Download the best AI Code Mentor developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -38,8 +42,8 @@ export default [
             id: 6114,
             label: "Courses",
             content: {
-              title: "",
-              description: "",
+              title: "Courses Resource",
+              description: `Download the best Courses developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -47,8 +51,8 @@ export default [
             id: 6115,
             label: "Bits - Code Snippets",
             content: {
-              title: "",
-              description: "",
+              title: "Bits - Code Snippets Resource",
+              description: `Download the best Bits - Code Snippets developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -56,8 +60,8 @@ export default [
             id: 6116,
             label: "Shapehost - Hosting",
             content: {
-              title: "",
-              description: "",
+              title: "Shapehost - Hosting Resource",
+              description: `Download the best Shapehost - Hosting developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -65,8 +69,8 @@ export default [
             id: 6117,
             label: "Discord Server",
             content: {
-              title: "",
-              description: "",
+              title: "Discord Server Resource",
+              description: `Download the best Discord Server developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -74,8 +78,8 @@ export default [
             id: 6118,
             label: "Custom Development",
             content: {
-              title: "",
-              description: "",
+              title: "Custom Development Resource",
+              description: `Download the best Custom Development developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -83,8 +87,8 @@ export default [
             id: 6119,
             label: "Mints - Expert Design",
             content: {
-              title: "",
-              description: "",
+              title: "Mints - Expert Design Resource",
+              description: `Download the best Mints - Expert Design developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -92,8 +96,8 @@ export default [
             id: 61110,
             label: "Free Illustrations",
             content: {
-              title: "",
-              description: "",
+              title: "Free Illustrations Resource",
+              description: `Download the best Free Illustrations developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -101,8 +105,8 @@ export default [
             id: 61111,
             label: "Material Tailwind",
             content: {
-              title: "",
-              description: "",
+              title: "Material Tailwind Resource",
+              description: `Download the best Material Tailwind developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -110,8 +114,8 @@ export default [
             id: 61112,
             label: "Third-Party Tools",
             content: {
-              title: "",
-              description: "",
+              title: "Third-Party Tools Resource",
+              description: `Download the best Third-Party Tools developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
