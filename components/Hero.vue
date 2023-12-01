@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container-9x flex-center flex-col gap-10 pt-32 pb-16 text-white"
+    class="container-8x flex-center flex-col gap-10 pt-32 pb-16 text-white"
     @grabId="pickId(id)"
   >
     <h1 class="text-5xl tracking-wide">
@@ -14,12 +14,12 @@
         type="text"
         id="search-input"
         :placeholder="animatedPlaceholder"
-        class="w-full h-10 outline-none border-[1px] rounded-3xl pl-6 pr-16 text-lg font-semibold tracking-wide text-white placeholder-white"
+        class="w-full h-10 outline-none border-[0.1px] border-white border-opacity-20 rounded-3xl pl-6 pr-16 text-lg font-semibold tracking-wide text-white placeholder-white"
         :class="gradient"
       />
       <div
         id="search-btn"
-        class="w-10 h-10 rounded-full absolute right-3 top-2 border-[1px] flex-center cursor-pointer"
+        class="w-10 h-10 rounded-full absolute right-3 top-2 border-[0.1px] border-white border-opacity-20 flex-center cursor-pointer"
         :class="gradient"
       >
         <img
@@ -31,15 +31,9 @@
     </div>
   </section>
 </template>
-<script>
+<script> 
+
 export default {
-  data() {
-    return {
-      activeId: null,
-      animatedPlaceholder: "Type something to search for i.e ",
-      intervalId: null,
-    };
-  },
   props: {
     activeContent: {
       type: Object,
@@ -50,6 +44,13 @@ export default {
       required: true,
     },
     searchedClick: Boolean,
+  },
+  data() {
+    return {
+      activeId: null,
+      animatedPlaceholder: "Type your query here i.e ",
+      intervalId: null,
+    };
   },
 
   watch: {
@@ -90,7 +91,7 @@ export default {
     },
     startAnimation() {
       clearInterval(this.intervalId); // clear previous interval
-      this.animatedPlaceholder = "Type something to search for i.e ";
+      this.animatedPlaceholder = "Type your query here i.e ";
       const text = this.activeContent.content.title + "...";
       let i = 0;
       this.intervalId = setInterval(() => {
@@ -98,7 +99,7 @@ export default {
           this.animatedPlaceholder += text.charAt(i);
           i++;
         } else {
-          this.animatedPlaceholder = "Type something to search for i.e ";
+          this.animatedPlaceholder = "Type your query here i.e ";
           i = 0;
         }
       }, 300); // speed

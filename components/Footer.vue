@@ -1,6 +1,6 @@
 <template>
   <footer class="container-10x w-full pt-10 flex flex-col text-white">
-    <div class="container-9x w-full">
+    <div class="container-8x w-full">
       <div class="flex justify-between items-end">
         <div v-for="stat in footer.stats" :key="stat.id">
           <p class="flex flex-col items-start justify-center gap-1">
@@ -22,7 +22,7 @@
             <input
               type="text"
               :placeholder="footer.newsletter.placeholder"
-              class="px-4 rounded-lg outline-none border-[1px]"
+              class="px-4 rounded-lg outline-none border-[0.1px] border-white border-opacity-20"
               :class="gradient"
             />
             <Button
@@ -87,15 +87,15 @@ import Button from "@/components/Button.vue";
 import FooterIcon from "@/components/FooterIcon.vue";
 
 export default {
+  components: {
+    Button,
+    FooterIcon,
+  },
   props: {
     gradient: {
       type: String,
       required: true,
     },
-  },
-  components: {
-    Button,
-    FooterIcon,
   },
   computed: {
     footer() {

@@ -10,7 +10,7 @@ import {
   reactNativeIcon,
 } from "@/assets/images";
 import randomNumber from "./functions/randomNumber.js";
-
+import { pattern1, pattern3 } from "./panelPatterns.js";
 export default [
   {
     id: 41,
@@ -27,6 +27,7 @@ export default [
             content: {
               title: "Big Bundle Templates",
               description: `Download the best Big Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -37,6 +38,7 @@ export default [
             content: {
               title: "React Bundle Templates",
               description: `Download the best React Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -47,6 +49,7 @@ export default [
             content: {
               title: "Tailwind Bundle Templates",
               description: `Download the best Tailwind Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -57,6 +60,7 @@ export default [
             content: {
               title: "Vuejs Bundle Templates",
               description: `Download the best Vuejs Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -67,6 +71,7 @@ export default [
             content: {
               title: "Angular Bundle Templates",
               description: `Download the best Angular Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -77,6 +82,7 @@ export default [
             content: {
               title: "Laravel Bundle Templates",
               description: `Download the best Laravel Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -87,6 +93,7 @@ export default [
             content: {
               title: "Bootstrap Bundle Templates",
               description: `Download the best Bootstrap Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -97,6 +104,7 @@ export default [
             content: {
               title: "Mobile Bundle Templates",
               description: `Download the best Mobile Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },

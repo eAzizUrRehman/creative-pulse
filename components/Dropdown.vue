@@ -1,5 +1,10 @@
 <template>
   <div
+    v-if="
+      links.label !== 'Search' &&
+      links.label !== 'Blog' &&
+      links.label !== 'Login/Register'
+    "
     class="flex p-8 whitespace-nowrap rounded-2xl shadow-2xl text-white border-[1px]"
     :class="gradient"
   >
@@ -22,7 +27,6 @@
               <li
                 v-for="link in link.links"
                 :key="link.id"
-                id="hoverDiv"
                 class="w-full px-2 py-1 flex justify-start items-center gap-2 flex-center rounded-lg cursor-pointer transition-all ease-in-out duration-500 min-h-[35px]"
                 @click="handleClick(link.id)"
                 @mouseover="isHovered"
@@ -43,15 +47,12 @@
         </div>
       </div>
     </div>
-    <div class="w-1/2"></div>
   </div>
 </template>
 
 <script>
+
 export default {
-  data() {
-    return {};
-  },
   props: {
     links: {
       type: Object,

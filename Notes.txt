@@ -1,3 +1,23 @@
 npm install -g create-nuxt-app
 
 npx create-nuxt-app <project-name>
+
+
+ //   const technologies = [
+  //   // your array of objects
+  // ].map((tech) => {
+  //   return {
+  //     ...tech,
+  //     links: tech.links.map((link) => {
+  //       return {
+  //         ...link,
+  //         links: link.links.map((subLink) => {
+  //           return {
+  //             ...subLink,
+  //             bgColor: getRandomGradient(),
+  //           };
+  //         }),
+  //       };
+  //     }),
+  //   };
+  // });

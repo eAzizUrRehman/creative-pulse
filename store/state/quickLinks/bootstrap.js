@@ -1,6 +1,6 @@
 import { innerBootstrapIcon } from "@/assets/images";
 import randomNumber from "./functions/randomNumber.js";
-
+import { pattern2, pattern4 } from "./panelPatterns.js";
 export default [
   {
     id: 51,
@@ -16,6 +16,7 @@ export default [
             content: {
               title: "Bootstrap Admin Templates",
               description: `Download the best Bootstrap admin & dashboard templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -25,6 +26,7 @@ export default [
             content: {
               title: "Free Bootstrap Templates",
               description: `Download the best Free Bootstrap Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -34,6 +36,7 @@ export default [
             content: {
               title: "Premium Bootstrap Templates",
               description: `Download the best Premium Bootstrap Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -43,6 +46,7 @@ export default [
             content: {
               title: "UI Kits",
               description: `Download the best Bootstrap UI Kit developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -52,6 +56,7 @@ export default [
             content: {
               title: "Bootstrap Landing Page",
               description: `Download the best Bootstrap landing page templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -61,6 +66,7 @@ export default [
             content: {
               title: "Bootstrap E-commerce Templates",
               description: `Download the best Bootstrap Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -70,6 +76,7 @@ export default [
             content: {
               title: "Bootstrap One Page Templates",
               description: `Download the best Bootstrap one page Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -79,6 +86,7 @@ export default [
             content: {
               title: "Bootstrap Login Form",
               description: `Download the best Bootstrap login forms developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -88,6 +96,7 @@ export default [
             content: {
               title: "Bootstrap Wizards",
               description: `Download the best Bootstrap wizards and forms developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -97,6 +106,7 @@ export default [
             content: {
               title: "Bootstrap Calendar",
               description: `Download the best Bootstrap jquery calendars developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },

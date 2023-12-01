@@ -22,6 +22,14 @@ import {
   aspnetIcon,
 } from "@/assets/images";
 import randomNumber from "./functions/randomNumber.js";
+import {
+  pattern1,
+  pattern2,
+  pattern3,
+  pattern4,
+  pattern5,
+  pattern6,
+} from "./panelPatterns.js";
 
 export default [
   {
@@ -38,6 +46,8 @@ export default [
             content: {
               title: "Tailwind Templates",
               description: `Download the best Tailwind CSS Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+
+              panel: pattern3,
             },
             url: "/",
           },
@@ -48,6 +58,7 @@ export default [
             content: {
               title: "Bootstrap Themes",
               description: `Download the best Bootstrap Themes and Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -57,7 +68,8 @@ export default [
             iconUrl: angularIcon,
             content: {
               title: "Angular Templates",
-              description: `Download the best Angular themes & templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Angular themes & templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -68,6 +80,7 @@ export default [
             content: {
               title: "React Templates",
               description: `Download the best React Themes & templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -77,7 +90,7 @@ export default [
             iconUrl: vuejsIcon,
             content: {
               title: "Vue Templates",
-              description: `Download the best Vuejs Themes & Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Vuejs Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
             },
             url: "/",
           },
@@ -88,6 +101,7 @@ export default [
             content: {
               title: "React Native Templates for iOS and Android",
               description: `Download the best React Native Themes & Templates developed by Creative Pulse Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern5,
             },
             url: "/",
           },
@@ -98,11 +112,13 @@ export default [
             content: {
               title: "Svelte Themes",
               description: `Download the best Svelte Themes and Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern5,
             },
             url: "/",
           },
         ],
       },
+
       {
         id: 212,
         links: [
@@ -113,6 +129,7 @@ export default [
             content: {
               title: "Material UI Templates",
               description: `Download the best Material UI React Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -123,6 +140,7 @@ export default [
             content: {
               title: "Vuetifyjs Templates",
               description: `Download the best Vuetifyjs Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -132,7 +150,8 @@ export default [
             iconUrl: flutterIcon,
             content: {
               title: "Flutter Templates for iOS and Android",
-              description: `Download the best Flutter Themes & Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Flutter Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern5,
             },
             url: "/",
           },
@@ -142,7 +161,8 @@ export default [
             iconUrl: vueMaterialIcon,
             content: {
               title: "Vue Material Templates",
-              description: `Download the best Vue Material Themes & Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Vue Material Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -153,6 +173,7 @@ export default [
             content: {
               title: "Reactstrap Templates",
               description: `Download the best Reactstrap Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -162,7 +183,8 @@ export default [
             iconUrl: reactBootstrapIcon,
             content: {
               title: "Bootstrap React Templates",
-              description: `Download the best Bootstrap React Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Bootstrap React Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -173,6 +195,7 @@ export default [
             content: {
               title: "Bootstrap Vue Templates",
               description: `Download the best Bootstrap Vuejs templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -194,6 +217,7 @@ export default [
             content: {
               title: "Laravel Templates",
               description: `Download the best Laravel Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern6,
             },
             url: "/",
           },
@@ -203,7 +227,8 @@ export default [
             iconUrl: djangoIcon,
             content: {
               title: "Django Themes",
-              description: `Download the best Django Themes and Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Django Themes and Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern5,
             },
             url: "/",
           },
@@ -214,6 +239,7 @@ export default [
             content: {
               title: "Flask Themes",
               description: `Download the best Flask Themes and Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern6,
             },
             url: "/",
           },
@@ -223,7 +249,8 @@ export default [
             iconUrl: nextIcon,
             content: {
               title: "Nextjs Templates",
-              description: `Download the best Next.js Themes & templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Next.js Themes & templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -234,6 +261,7 @@ export default [
             content: {
               title: "Nuxtjs Templates",
               description: `Download the best Nuxt.js Themes & templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern4,
             },
             url: "/",
           },
@@ -244,6 +272,7 @@ export default [
             content: {
               title: "Nodejs Templates",
               description: `Download the best Nodejs Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern6,
             },
             url: "/",
           },
@@ -253,7 +282,8 @@ export default [
             iconUrl: aspnetIcon,
             content: {
               title: "Asp.NET Templates",
-              description: `Download the best Asp.NET Themes & Templates developed by Creative Pulse. Join over 2,366,276 creatives that already love our bootstrap resources!`,
+              description: `Download the best Asp.NET Themes & Templates developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern5,
             },
             url: "/",
           },

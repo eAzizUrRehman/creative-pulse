@@ -1,6 +1,6 @@
 import { innerResourcesIcon } from "@/assets/images";
 import randomNumber from "./functions/randomNumber.js";
-
+import { pattern1, pattern2, pattern3 } from "./panelPatterns.js";
 export default [
   {
     id: 61,
@@ -17,6 +17,7 @@ export default [
             content: {
               title: "Book - Fundamentals UI/UX Resource",
               description: `Download the best Book - Fundamentals UI/UX developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -26,6 +27,7 @@ export default [
             content: {
               title: "Drag & Drop Builders Resource",
               description: `Download the best Drag & Drop Builders developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -35,6 +37,7 @@ export default [
             content: {
               title: "AI Code Mentor Resource",
               description: `Download the best AI Code Mentor developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -44,6 +47,7 @@ export default [
             content: {
               title: "Courses Resource",
               description: `Download the best Courses developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -53,6 +57,7 @@ export default [
             content: {
               title: "Bits - Code Snippets Resource",
               description: `Download the best Bits - Code Snippets developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -62,6 +67,7 @@ export default [
             content: {
               title: "Shapehost - Hosting Resource",
               description: `Download the best Shapehost - Hosting developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -71,6 +77,7 @@ export default [
             content: {
               title: "Discord Server Resource",
               description: `Download the best Discord Server developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -80,6 +87,7 @@ export default [
             content: {
               title: "Custom Development Resource",
               description: `Download the best Custom Development developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -89,6 +97,7 @@ export default [
             content: {
               title: "Mints - Expert Design Resource",
               description: `Download the best Mints - Expert Design developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },
@@ -98,6 +107,7 @@ export default [
             content: {
               title: "Free Illustrations Resource",
               description: `Download the best Free Illustrations developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern3,
             },
             url: "/",
           },
@@ -107,6 +117,7 @@ export default [
             content: {
               title: "Material Tailwind Resource",
               description: `Download the best Material Tailwind developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern1,
             },
             url: "/",
           },
@@ -116,6 +127,7 @@ export default [
             content: {
               title: "Third-Party Tools Resource",
               description: `Download the best Third-Party Tools developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
+              panel: pattern2,
             },
             url: "/",
           },

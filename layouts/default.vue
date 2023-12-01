@@ -1,29 +1,34 @@
 <template>
-  <div class="font-Poppins ">
+  <div class="font-Poppins">
     <div :class="gradient">
-      <div class="w-full fixed top-0 left-0 z-50">
+      <div
+        class="w-full fixed top-0 left-0 z-50"
+        :class="activeClass(gradient)"
+      >
         <transition name="fade">
           <div
             class="w-full text-white transition-all duration-500 ease-in-out"
             :class="{
-              gradient: pinNavbar,
+              'border-b-[0.1px] border-b-white border-opacity-20': NavbarScroll,
             }"
           >
             <Navbar
               @searchClicked="searchBtnClicked()"
               @grab-id="handleId"
-              :pinNavbar="pinNavbar"
               :gradient="gradient"
             />
           </div>
         </transition>
       </div>
-      <main class="">
+      <main class=" ">
         <Hero
           :activeContent="activeContent"
           :gradient="gradient"
           :searchedClick="searchClicked"
         />
+        <div class="w-full sticky top-16">
+          <Panel :gradient="gradient" :activeContent="activeContent" />
+        </div>
       </main>
     </div>
     <main class="">
@@ -38,18 +43,41 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
+import Panel from "@/components/Panel.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
+  components: {
+    Navbar,
+    Hero,
+    Panel,
+    Footer,
+  },
   data() {
     return {
       activeId: 2111, // default id
       gradient: "black-gradient", // default gradient
-      pinNavbar: true,
       searchClicked: false,
+      NavbarScroll: null,
     };
   },
+  computed: {
+    activeContent() {
+      const allContent = this.$store.state.quickLinks.links
+        .filter((item) => item.dropdowns !== null)
+        .flatMap((e) => e.dropdowns || [])
+        .flatMap((e) => e.links || [])
+        .flatMap((e) => e.links || [])
+        .map((e) => e);
+      return allContent.find((item) => item.id === this.activeId);
+    },
+  },
   methods: {
+    handleScroll() {
+      const scrollPosition =
+        window.scrollY || document.documentElement.scrollTop;
+      this.NavbarScroll = scrollPosition >= 20;
+    },
     searchBtnClicked() {
       this.searchClicked = true;
       setTimeout(() => {
@@ -62,6 +90,9 @@ export default {
         this.getRandomGradient(); // color changes if id changes
         this.activeId = id;
       }
+    },
+    activeClass(val) {
+      return this.NavbarScroll ? val : "bg-transparent";
     },
     getRandomGradient() {
       const gradients = [
@@ -80,41 +111,8 @@ export default {
       this.gradient = gradients[Math.floor(Math.random() * gradients.length)];
     },
   },
-  computed: {
-    activeContent() {
-      const allContent = this.$store.state.quickLinks.links
-        .filter((item) => item.dropdowns !== null)
-        .flatMap((e) => e.dropdowns || [])
-        .flatMap((e) => e.links || [])
-        .flatMap((e) => e.links || [])
-        .map((e) => e);
-
-      return allContent.find((item) => item.id === this.activeId);
-    },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  components: {
-    Navbar,
-    Hero,
-    Footer,
-  },
-
-  //   const technologies = [
-  //   // your array of objects
-  // ].map((tech) => {
-  //   return {
-  //     ...tech,
-  //     links: tech.links.map((link) => {
-  //       return {
-  //         ...link,
-  //         links: link.links.map((subLink) => {
-  //           return {
-  //             ...subLink,
-  //             bgColor: getRandomGradient(),
-  //           };
-  //         }),
-  //       };
-  //     }),
-  //   };
-  // });
 };
 </script>

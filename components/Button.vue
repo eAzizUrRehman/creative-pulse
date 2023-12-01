@@ -1,19 +1,21 @@
 <template>
-  <a
-    :href="href"
-    class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[1px] text-white cursor-pointer"
-    :class="gradient"
-  >
-    <img
-      loading="lazy"
-      v-if="icon"
-      :src="icon"
-      alt=""
-      width="16"
-      class="inline"
-    />
-    {{ text }}
-  </a>
+  <button>
+    <a
+      :href="href"
+      class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[0.1px] border-white border-opacity-20 text-white cursor-pointer"
+      :class="gradient"
+    >
+      <img
+        loading="lazy"
+        v-if="icon"
+        :src="icon"
+        alt=""
+        width="16"
+        class="inline"
+      />
+      {{ text }}
+    </a>
+  </button>
 </template>
 
 <script>
