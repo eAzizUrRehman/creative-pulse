@@ -1,8 +1,8 @@
-import technologies from "./technologies.js";
-import designSystems from "./designSystems.js";
-import bundles from "./bundles.js";
-import bootstrap from "./bootstrap.js";
-import resources from "./resources.js";
+import technologies from './technologies.js'
+import designSystems from './designSystems.js'
+import bundles from './bundles.js'
+import bootstrap from './bootstrap.js'
+import resources from './resources.js'
 
 import {
   outerSearchIcon,
@@ -13,65 +13,63 @@ import {
   outerResourcesIcon,
   outerBlogIcon,
   outerLoginOrRegisterIcon,
-  dropdownIcon,
-} from "@/assets/images";
+  dropdownIcon
+} from '@/assets/images'
 
 export default [
   {
     id: 1,
-    label: "Search",
+    label: 'Search',
     dropdowns: null,
-    iconUrl: outerSearchIcon,
+    iconUrl: outerSearchIcon
   },
   {
     id: 2,
-    label: "Technologies",
+    label: 'Technologies',
     iconUrl: outerTechnologiesIcon,
     dropdowns: technologies,
-    dropdownIcon: dropdownIcon,
+    dropdownIcon: dropdownIcon
   },
   {
     id: 3,
-    label: "Design Systems",
+    label: 'Design Systems',
     iconUrl: outerDesignSystemsIcon,
     dropdowns: designSystems,
-    dropdownIcon: dropdownIcon,
+    dropdownIcon: dropdownIcon
   },
   {
     id: 4,
-    label: "Bundles",
+    label: 'Bundles',
     iconUrl: outerBundlesIcon,
     dropdowns: bundles,
-    dropdownIcon: dropdownIcon,
+    dropdownIcon: dropdownIcon
   },
   {
     id: 5,
-    label: "Bootstrap",
+    label: 'Bootstrap',
     iconUrl: outerBootstrapIcon,
     dropdowns: bootstrap,
-    dropdownIcon: dropdownIcon,
+    dropdownIcon: dropdownIcon
   },
   {
     id: 6,
-    label: "Resources",
+    label: 'Resources',
     iconUrl: outerResourcesIcon,
     dropdowns: resources,
-    dropdownIcon: dropdownIcon,
+    dropdownIcon: dropdownIcon
   },
   {
     id: 7,
-    label: "Blog",
+    label: 'Blog',
     iconUrl: outerBlogIcon,
     dropdowns: null,
-    url: "/",
+    url: '/'
   },
   {
     id: 8,
-    label: "Login/Register",
+    label: 'Login/Register',
     iconUrl: outerLoginOrRegisterIcon,
     dropdowns: null,
-    url: "/",
-  },
-];
-
-
+    url: '/'
+  }
+]

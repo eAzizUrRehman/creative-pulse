@@ -5,10 +5,10 @@
       links.label !== 'Blog' &&
       links.label !== 'Login/Register'
     "
-    class="flex p-8 whitespace-nowrap rounded-2xl shadow-2xl text-white border-[1px]"
+    class="flex whitespace-nowrap rounded-2xl border-[0.1px] border-white border-opacity-20 p-8 text-white shadow-2xl"
     :class="gradient"
   >
-    <div class="w-1/2 flex gap-10">
+    <div class="flex w-1/2 gap-10">
       <div v-for="dropdown in links.dropdowns" :key="dropdown.id" class="">
         <div>
           <div class="flex items-center gap-2">
@@ -18,7 +18,7 @@
               alt=""
               width="20"
             />
-            <span class="font-semibold text-lg">
+            <span class="text-lg font-semibold">
               {{ dropdown.label }}
             </span>
           </div>
@@ -27,18 +27,18 @@
               <li
                 v-for="link in link.links"
                 :key="link.id"
-                class="w-full px-2 py-1 flex justify-start items-center gap-2 flex-center rounded-lg cursor-pointer transition-all ease-in-out duration-500 min-h-[35px]"
+                class="flex-center flex min-h-[35px] w-full cursor-pointer items-center justify-start gap-2 rounded-lg px-2 py-1 transition-all duration-500 ease-in-out"
                 @click="handleClick(link.id)"
                 @mouseover="isHovered"
                 @mouseout="isUnhovered"
               >
                 <div
                   v-if="link.iconUrl"
-                  class="rounded-full bg-white w-6 h-6 p-0.5"
+                  class="h-6 w-6 rounded-full bg-white p-0.5"
                 >
                   <img :src="link.iconUrl" alt="" class="rounded-full" />
                 </div>
-                <span class="tracking-wide text-primary-color text-sm dim">
+                <span class="text-primary-color dim text-sm tracking-wide">
                   {{ link.label }}
                 </span>
               </li>
@@ -51,29 +51,28 @@
 </template>
 
 <script>
-
 export default {
   props: {
     links: {
       type: Object,
-      required: true,
+      required: true
     },
     gradient: {
       type: String,
-      required: true,
+      required: true
     },
-    iconUrl: String,
+    iconUrl: String
   },
   methods: {
     handleClick(id) {
-      this.$emit("grab-id", id);
+      this.$emit('grab-id', id)
     },
     isHovered(event) {
-      event.currentTarget.classList.add(this.gradient);
+      event.currentTarget.classList.add(this.gradient)
     },
     isUnhovered(event) {
-      event.currentTarget.classList.remove(this.gradient);
-    },
-  },
-};
+      event.currentTarget.classList.remove(this.gradient)
+    }
+  }
+}
 </script>

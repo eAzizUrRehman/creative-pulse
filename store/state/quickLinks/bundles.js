@@ -7,14 +7,14 @@ import {
   angularIcon,
   laravelIcon,
   bootstrapIcon,
-  reactNativeIcon,
-} from "@/assets/images";
-import randomNumber from "./functions/randomNumber.js";
-import { pattern1, pattern3 } from "./panelPatterns.js";
+  reactNativeIcon
+} from '@/assets/images'
+import randomNumber from './functions/randomNumber.js'
+import { pattern1, pattern3 } from './panelPatterns.js'
 export default [
   {
     id: 41,
-    label: "Bundles",
+    label: 'Bundles',
     iconUrl: innerBundlesIcon,
     links: [
       {
@@ -22,94 +22,94 @@ export default [
         links: [
           {
             id: 4111,
-            label: "Big Bundle",
+            label: 'Big Bundle',
             iconUrl: bigBundleIcon,
             content: {
-              title: "Big Bundle Templates",
+              title: 'Big Bundle Templates',
               description: `Download the best Big Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern3,
+              panel: pattern3
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4112,
-            label: "React Bundle",
+            label: 'React Bundle',
             iconUrl: reactIcon,
             content: {
-              title: "React Bundle Templates",
+              title: 'React Bundle Templates',
               description: `Download the best React Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern3,
+              panel: pattern3
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4113,
-            label: "Tailwind Bundle",
+            label: 'Tailwind Bundle',
             iconUrl: tailwindCSSIcon,
             content: {
-              title: "Tailwind Bundle Templates",
+              title: 'Tailwind Bundle Templates',
               description: `Download the best Tailwind Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern1,
+              panel: pattern1
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4114,
-            label: "Vuejs Bundle",
+            label: 'Vuejs Bundle',
             iconUrl: vuejsIcon,
             content: {
-              title: "Vuejs Bundle Templates",
+              title: 'Vuejs Bundle Templates',
               description: `Download the best Vuejs Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern1,
+              panel: pattern1
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4115,
-            label: "Angular Bundle",
+            label: 'Angular Bundle',
             iconUrl: angularIcon,
             content: {
-              title: "Angular Bundle Templates",
+              title: 'Angular Bundle Templates',
               description: `Download the best Angular Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern3,
+              panel: pattern3
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4116,
-            label: "Laravel Bundle",
+            label: 'Laravel Bundle',
             iconUrl: laravelIcon,
             content: {
-              title: "Laravel Bundle Templates",
+              title: 'Laravel Bundle Templates',
               description: `Download the best Laravel Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern1,
+              panel: pattern1
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4117,
-            label: "Bootstrap Bundle",
+            label: 'Bootstrap Bundle',
             iconUrl: bootstrapIcon,
             content: {
-              title: "Bootstrap Bundle Templates",
+              title: 'Bootstrap Bundle Templates',
               description: `Download the best Bootstrap Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern3,
+              panel: pattern3
             },
-            url: "/",
+            url: '/'
           },
           {
             id: 4118,
-            label: "Mobile Bundle",
+            label: 'Mobile Bundle',
             iconUrl: reactNativeIcon,
             content: {
-              title: "Mobile Bundle Templates",
+              title: 'Mobile Bundle Templates',
               description: `Download the best Mobile Bundle developed by Creative Pulse. Join over ${randomNumber()} creatives that already love our bootstrap resources!`,
-              panel: pattern1,
+              panel: pattern1
             },
-            url: "/",
-          },
-        ],
-      },
-    ],
-  },
-];
+            url: '/'
+          }
+        ]
+      }
+    ]
+  }
+]

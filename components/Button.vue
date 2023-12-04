@@ -2,7 +2,7 @@
   <button>
     <a
       :href="href"
-      class="w-fit py-2.5 px-8 rounded-full outline-none text-xs tracking-wider uppercase flex-center gap-2 border-[0.1px] border-white border-opacity-20 text-white cursor-pointer"
+      class="flex-center w-fit cursor-pointer gap-2 rounded-full border-[0.1px] border-white border-opacity-20 px-8 py-2.5 text-xs uppercase tracking-wider text-white outline-none"
       :class="gradient"
     >
       <img
@@ -23,17 +23,17 @@ export default {
   props: {
     text: {
       type: String,
-      required: true,
+      required: true
     },
     gradient: {
       type: String,
-      required: true,
+      required: true
     },
     href: String,
     bgColor: String,
     color: String,
     borderColor: String,
-    icon: String,
-  },
-};
+    icon: String
+  }
+}
 </script>

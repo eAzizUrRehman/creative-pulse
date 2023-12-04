@@ -1,25 +1,25 @@
 <template>
   <section
-    class="container-8x flex-center flex-col gap-10 pt-32 pb-16 text-white"
+    class="container-8x flex-center flex-col gap-10 pb-16 pt-32 text-white"
     @grabId="pickId(id)"
   >
     <h1 class="text-5xl tracking-wide">
       {{ activeContent.content.title }}
     </h1>
-    <p class="tracking-wide leading-normal text-xl">
+    <p class="text-xl leading-normal tracking-wide">
       {{ activeContent.content.description }}
     </p>
-    <div class="px-3 py-2 w-full rounded-3xl relative">
+    <div class="relative w-full rounded-3xl px-3 py-2">
       <input
         type="text"
         id="search-input"
         :placeholder="animatedPlaceholder"
-        class="w-full h-10 outline-none border-[0.1px] border-white border-opacity-20 rounded-3xl pl-6 pr-16 text-lg font-semibold tracking-wide text-white placeholder-white"
+        class="h-10 w-full rounded-3xl border-[0.1px] border-white border-opacity-20 pl-6 pr-16 text-lg font-semibold tracking-wide text-white placeholder-white outline-none"
         :class="gradient"
       />
       <div
         id="search-btn"
-        class="w-10 h-10 rounded-full absolute right-3 top-2 border-[0.1px] border-white border-opacity-20 flex-center cursor-pointer"
+        class="flex-center absolute right-3 top-2 h-10 w-10 cursor-pointer rounded-full border-[0.1px] border-white border-opacity-20"
         :class="gradient"
       >
         <img
@@ -31,89 +31,88 @@
     </div>
   </section>
 </template>
-<script> 
-
+<script>
 export default {
   props: {
     activeContent: {
       type: Object,
-      required: true,
+      required: true
     },
     gradient: {
       type: String,
-      required: true,
+      required: true
     },
-    searchedClick: Boolean,
+    searchedClick: Boolean
   },
   data() {
     return {
       activeId: null,
-      animatedPlaceholder: "Type your query here i.e ",
-      intervalId: null,
-    };
+      animatedPlaceholder: 'Type your query here i.e ',
+      intervalId: null
+    }
   },
 
   watch: {
     activeContent: {
       handler(newVal, oldVal) {
         if (newVal.label !== oldVal.label) {
-          this.startAnimation();
+          this.startAnimation()
         }
       },
-      deep: true,
+      deep: true
     },
     searchedClick: {
       handler() {
         if (this.searchedClick === true) {
-          let searchInput = document.getElementById("search-input");
-          searchInput.focus();
-          searchInput.classList.add("shake");
+          let searchInput = document.getElementById('search-input')
+          searchInput.focus()
+          searchInput.classList.add('shake')
 
-          let searchBtn = document.getElementById("search-btn");
-          searchBtn.focus();
-          searchBtn.classList.add("shake");
+          let searchBtn = document.getElementById('search-btn')
+          searchBtn.focus()
+          searchBtn.classList.add('shake')
         } else {
-          document.getElementById("search-input").classList.remove("shake");
-          document.getElementById("search-btn").classList.remove("shake");
+          document.getElementById('search-input').classList.remove('shake')
+          document.getElementById('search-btn').classList.remove('shake')
         }
-      },
-    },
+      }
+    }
   },
   created() {
-    this.startAnimation();
+    this.startAnimation()
   },
   beforeDestroy() {
-    clearInterval(this.intervalId); // clear interval
+    clearInterval(this.intervalId) // clear interval
   },
   methods: {
     pickId(id) {
-      this.activeId = id;
+      this.activeId = id
     },
     startAnimation() {
-      clearInterval(this.intervalId); // clear previous interval
-      this.animatedPlaceholder = "Type your query here i.e ";
-      const text = this.activeContent.content.title + "...";
-      let i = 0;
+      clearInterval(this.intervalId) // clear previous interval
+      this.animatedPlaceholder = 'Type your query here i.e '
+      const text = this.activeContent.content.title + '...'
+      let i = 0
       this.intervalId = setInterval(() => {
         if (i < text.length) {
-          this.animatedPlaceholder += text.charAt(i);
-          i++;
+          this.animatedPlaceholder += text.charAt(i)
+          i++
         } else {
-          this.animatedPlaceholder = "Type your query here i.e ";
-          i = 0;
+          this.animatedPlaceholder = 'Type your query here i.e '
+          i = 0
         }
-      }, 300); // speed
-    },
-  },
-};
+      }, 300) // speed
+    }
+  }
+}
 </script>
 
 <style scoped>
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   opacity: 0.5;
 }
 
-input[type="text"]:focus::placeholder {
+input[type='text']:focus::placeholder {
   opacity: 0.8;
 }
 

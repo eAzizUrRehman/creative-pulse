@@ -1,18 +1,19 @@
 <template>
   <div
-    class="container-9x rounded-lg py-3 shadow-2xl translate-y-1/2 flex justify-start items-center gap-4 border-[0.1px] border-white border-opacity-20"
+    class="container-9x 0 flex translate-y-1/2 items-center justify-start gap-4 rounded-lg py-3 shadow-2xl"
     :class="gradient"
+    @click.self="showPanelDropdown = false"
   >
     <div
       v-if="activeContent.iconUrl"
-      class="w-10 h-10 rounded-full flex-center bg-white"
+      class="flex-center h-10 w-10 rounded-full bg-white"
     >
       {{ activeContent.title }}
       <NuxtLink :to="activeContent.url">
         <img
           :src="activeContent.iconUrl"
           alt=""
-          class="rounded-full w-full h-full p-1"
+          class="h-full w-full rounded-full p-1"
         />
       </NuxtLink>
     </div>
@@ -25,10 +26,10 @@
         </button>
       </li>
     </ul>
-    <div v-if="dropdownPanelContent">
+    <div v-if="dropdownPanelContent.length > 0">
       <button
-        class="panel-element flex-center gap-1 group relative"
-        @click="showDropdownPanelContent = true"
+        class="panel-element flex-center group relative gap-1"
+        @click="showPanelDropdown = !showPanelDropdown"
       >
         More
         <img
@@ -38,13 +39,13 @@
         />
       </button>
       <div
-        v-if="showDropdownPanelContent"
+        v-if="showPanelDropdown"
         :class="gradient"
-        class="rounded-xl p-2"
+        class="absolute rounded-xl border-[0.1px] border-white border-opacity-20 p-2 shadow-lg"
       >
         <ul v-for="link in dropdownPanelContent" :key="link.id" class=" ">
-          <li class="bottom-0 ">
-            <button class="panel-element  ">
+          <li>
+            <button class="panel-element" @click="showPanelDropdown = false">
               <NuxtLink :to="link.url">
                 {{ link.name }}
               </NuxtLink>
@@ -57,31 +58,31 @@
 </template>
 
 <script>
-import { panelDropdownIcon } from "@/assets/images";
+import { panelDropdownIcon } from '@/assets/images'
 export default {
   props: {
     activeContent: {
       type: Object,
-      required: true,
+      required: true
     },
     gradient: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
-      showDropdownPanelContent: false,
-      panelDropdownIcon,
-    };
+      showPanelDropdown: false,
+      panelDropdownIcon
+    }
   },
   computed: {
     frontPanelContent() {
-      return this.activeContent.content.panel.slice(0, 7);
+      return this.activeContent.content.panel.slice(0, 7)
     },
     dropdownPanelContent() {
-      return this.activeContent.content.panel.slice(7);
-    },
-  },
-};
+      return this.activeContent.content.panel.slice(7)
+    }
+  }
+}
 </script>

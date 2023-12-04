@@ -1,7 +1,7 @@
 <template>
-  <footer class="container-10x w-full pt-10 flex flex-col text-white">
+  <footer class="container-10x flex w-full flex-col pt-10 text-white">
     <div class="container-8x w-full">
-      <div class="flex justify-between items-end">
+      <div class="flex items-end justify-between">
         <div v-for="stat in footer.stats" :key="stat.id">
           <p class="flex flex-col items-start justify-center gap-1">
             <span class="text-xl">
@@ -15,14 +15,14 @@
 
         <div class="">
           <label
-            class="block text-3xl text-footer-text-color hover:text-white"
+            class="text-footer-text-color block text-3xl hover:text-white"
             >{{ footer.newsletter.CTA }}</label
           >
           <div class="mt-4 flex gap-4">
             <input
               type="text"
               :placeholder="footer.newsletter.placeholder"
-              class="px-4 rounded-lg outline-none border-[0.1px] border-white border-opacity-20"
+              class="rounded-lg border-[0.1px] border-white border-opacity-20 px-4 outline-none"
               :class="gradient"
             />
             <Button
@@ -34,14 +34,14 @@
           </div>
         </div>
       </div>
-      <div class="my-20 flex justify-between items-start tracking-wide">
+      <div class="my-20 flex items-start justify-between tracking-wide">
         <div v-for="column in footer.footerLinks" :key="column.id">
-          <p class="text-lg mb-4">
+          <p class="mb-4 text-lg">
             {{ column.label }}
           </p>
           <ul v-for="link in column.links" :key="link.id" class="">
             <li
-              class="mt-2 text-footer-text-color text-sm text-white hover:opacity-100 opacity-80"
+              class="text-footer-text-color mt-2 text-sm text-white opacity-80 hover:opacity-100"
             >
               <a :href="link.url">
                 {{ link.label }}
@@ -51,21 +51,23 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[0.6px] opacity-20 bg-white"></div>
-    <div class="my-20 mx-auto">
+    <div class="h-[0.6px] w-full bg-white opacity-20"></div>
+    <div class="mx-auto my-20">
       <div class="flex-center flex-col gap-1">
-        <div class="flex-center flex-col gap-1 hover:opacity-100 opacity-60 ">
-          <img
-            loading="lazy"
-            :src="footer.logo"
-            alt=""
-            class="logo-white w-10 cursor-pointer"
-          />
-          <h3 class="text-xs tracking-wider cursor-pointer">
-            {{ footer.title }}
-          </h3>
-        </div>
-        <div class="mt-4 flex-center gap-2">
+        <NuxtLink to="/">
+          <div class="flex-center flex-col gap-1 opacity-60 hover:opacity-100">
+            <img
+              loading="lazy"
+              :src="footer.logo"
+              alt=""
+              class="logo-white w-10 cursor-pointer"
+            />
+            <h3 class="cursor-pointer text-xs tracking-wider">
+              {{ footer.title }}
+            </h3>
+          </div>
+        </NuxtLink>
+        <div class="flex-center mt-4 gap-2">
           <div v-for="handle in footer.socialMedia" :key="handle.id">
             <FooterIcon
               :label="handle.label"
@@ -83,26 +85,24 @@
 </template>
 
 <script>
-import Button from "@/components/Button.vue";
-import FooterIcon from "@/components/FooterIcon.vue";
+import Button from '@/components/Button.vue'
+import FooterIcon from '@/components/FooterIcon.vue'
 
 export default {
   components: {
     Button,
-    FooterIcon,
+    FooterIcon
   },
   props: {
     gradient: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     footer() {
-      return this.$store.state.footer;
-    },
-  },
-};
+      return this.$store.state.footer
+    }
+  }
+}
 </script>
-
-<style></style>

@@ -1,277 +1,277 @@
 const generateUrls = (patterns) =>
   patterns.map((pattern) => ({
     ...pattern,
-    url: `/${pattern.name.toLowerCase().replace(/ /g, "-")}`,
-  }));
+    url: `/${pattern.name.toLowerCase().replace(/ /g, '-')}`
+  }))
 
 export const pattern1 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboards",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "UI Kits",
+    name: 'UI Kits'
   },
   {
     id: 3,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 4,
-    name: "Premium Themes",
+    name: 'Premium Themes'
   },
   {
     id: 5,
-    name: "Material UI",
+    name: 'Material UI'
   },
   {
     id: 6,
-    name: "Reactstrap",
+    name: 'Reactstrap'
   },
   {
     id: 7,
-    name: "Next.js",
+    name: 'Next js'
   },
   {
     id: 8,
-    name: "Chakra UI",
+    name: 'Chakra UI'
   },
   {
     id: 9,
-    name: "React Bootstrap",
+    name: 'React Bootstrap'
   },
   {
     id: 10,
-    name: "Shopify",
-  },
-]);
+    name: 'Shopify'
+  }
+])
 
 export const pattern2 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboard",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "UI Kits",
+    name: 'UI Kits'
   },
   {
     id: 3,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 4,
-    name: "Premium Themes",
+    name: 'Premium Themes'
   },
   {
     id: 5,
-    name: "VuetifyJS",
+    name: 'VuetifyJS'
   },
   {
     id: 6,
-    name: "Nuxt.js",
+    name: 'Nuxt js'
   },
   {
     id: 7,
-    name: "Vue Material",
+    name: 'Vue Material'
   },
   {
     id: 8,
-    name: "Ant Design",
+    name: 'Ant Design'
   },
   {
     id: 9,
-    name: "Vue Bootstrap",
+    name: 'Vue Bootstrap'
   },
   {
     id: 10,
-    name: "Vuejs API",
+    name: 'Vuejs API'
   },
   {
     id: 11,
-    name: "Vite",
+    name: 'Vite'
   },
   {
     id: 12,
-    name: "Shopify",
-  },
-]);
+    name: 'Shopify'
+  }
+])
 
 export const pattern3 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboard",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "UI Kits",
+    name: 'UI Kits'
   },
   {
     id: 3,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 4,
-    name: "Premium Themes",
+    name: 'Premium Themes'
   },
   {
     id: 5,
-    name: "React",
+    name: 'React'
   },
   {
     id: 6,
-    name: "Vue",
+    name: 'Vue'
   },
   {
     id: 7,
-    name: "Angular",
+    name: 'Angular'
   },
   {
     id: 8,
-    name: "Svelte",
+    name: 'Svelte'
   },
   {
     id: 9,
-    name: "JavaScript",
+    name: 'JavaScript'
   },
   {
     id: 10,
-    name: "NextJS",
+    name: 'Next js'
   },
   {
     id: 11,
-    name: "Shopify",
-  },
-]);
+    name: 'Shopify'
+  }
+])
 export const pattern4 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboards",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "UI Kits",
+    name: 'UI Kits'
   },
   {
     id: 3,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 4,
-    name: "Premium Themes",
+    name: 'Premium Themes'
   },
   {
     id: 5,
-    name: "Landing Pages",
+    name: 'Landing Pages'
   },
   {
     id: 6,
-    name: "E-commerce",
+    name: 'E-commerce'
   },
   {
     id: 7,
-    name: "Calendar",
+    name: 'Calendar'
   },
   {
     id: 8,
-    name: "Wizards",
+    name: 'Wizards'
   },
   {
     id: 9,
-    name: "One Page Templates",
+    name: 'One Page Templates'
   },
   {
     id: 10,
-    name: "Login Forms",
+    name: 'Login Forms'
   },
   {
     id: 11,
-    name: "Snippets",
+    name: 'Snippets'
   },
   {
     id: 12,
-    name: "Shopify",
-  },
-]);
+    name: 'Shopify'
+  }
+])
 export const pattern5 = generateUrls([
   {
     id: 1,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 2,
-    name: "Premium Themes",
-  },
-]);
+    name: 'Premium Themes'
+  }
+])
 export const pattern6 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboard",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 3,
-    name: "Premium Themes",
+    name: 'Premium Themes'
   },
   {
     id: 4,
-    name: "Vuejs + Laravel API",
+    name: 'Vuejs And Laravel API'
   },
   {
     id: 5,
-    name: "Headless CMS",
-  },
-]);
+    name: 'Headless CMS'
+  }
+])
 export const pattern7 = generateUrls([
   {
     id: 1,
-    name: "Admin & Dashboards",
+    name: 'Admin And Dashboard'
   },
   {
     id: 2,
-    name: "Free Themes",
+    name: 'Free Themes'
   },
   {
     id: 3,
-    name: "Premium Themes",
-  },
-]);
+    name: 'Premium Themes'
+  }
+])
 
 export const pattern8 = generateUrls([
   {
     id: 1,
-    name: "All",
+    name: 'All'
   },
   {
     id: 2,
-    name: "Soft Design",
+    name: 'Soft Design'
   },
   {
     id: 3,
-    name: "Argon Design",
+    name: 'Argon Design'
   },
   {
     id: 4,
-    name: "Black Design",
+    name: 'Black Design'
   },
   {
     id: 5,
-    name: "Material Design",
+    name: 'Material Design'
   },
   {
     id: 6,
-    name: "Now UI Design",
+    name: 'Now UI Design'
   },
   {
     id: 7,
-    name: "Paper Design",
+    name: 'Paper Design'
   },
   {
     id: 8,
-    name: "Light Design",
-  },
-]);
+    name: 'Light Design'
+  }
+])

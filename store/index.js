@@ -1,7 +1,7 @@
-import * as stateContent from "./state";
+import * as stateContent from './state'
 
 export default {
   state() {
-    return stateContent;
-  },
-};
+    return stateContent
+  }
+}

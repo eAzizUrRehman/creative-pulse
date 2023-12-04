@@ -1,8 +1,7 @@
 <template>
-  <div class="w-full mx-auto text-center my-20">Content is coming soon...</div>
+  <div class="flex-center my-32 w-full">
+    Content for
+    <span class="mx-1 font-bold"> Home Page </span>
+    is coming soon...
+  </div>
 </template>
-<script>
-export default {
-  computed: {},
-};
-</script>

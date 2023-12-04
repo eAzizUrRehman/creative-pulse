@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   * {
-    @apply m-0 p-0 box-border select-none;
+    @apply m-0 box-border select-none p-0;
   }
 }
 @layer components {
@@ -27,19 +24,19 @@
     @apply opacity-70;
   }
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
   .container-10x {
-    @apply max-w-[1235px] mx-auto px-10;
+    @apply mx-auto max-w-[1235px] px-10;
   }
   .container-9x {
-    @apply max-w-[1150px] mx-auto px-10;
+    @apply mx-auto max-w-[1150px] px-10;
   }
   .container-8x {
-    @apply max-w-[780px] mx-auto px-10;
+    @apply mx-auto max-w-[780px] px-10;
   }
-  .panel-element{
-    @apply uppercase hover:bg-white hover:text-black text-white rounded-full py-1.5 px-3 text-sm tracking-tighter font-semibold
+  .panel-element {
+    @apply rounded-full px-3 py-1.5 text-sm font-semibold uppercase tracking-normal text-white hover:bg-white hover:text-black;
   }
 }
 
@@ -49,7 +46,7 @@
     height: 6px;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-[#94a3b8] rounded-full;
+    @apply rounded-full bg-[#94a3b8];
   }
   ::-webkit-scrollbar-track:hover {
     @apply bg-white;
