@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container-9x 0 flex translate-y-1/2 items-center justify-start gap-4 rounded-lg py-3 shadow-2xl"
+    class="container-9x 0 flex translate-y-1/2 items-center justify-start gap-4 rounded-lg border-[0.1px] border-white border-opacity-20 py-3 shadow-2xl"
     :class="gradient"
     @click.self="showPanelDropdown = false"
   >
