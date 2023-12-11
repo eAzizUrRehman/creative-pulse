@@ -1,6 +1,6 @@
 <template>
-  <footer class="container-10x flex w-full flex-col pt-10 text-white">
-    <div class="container-8x w-full">
+  <footer class="flex flex-col w-full pt-10 text-white container-10x">
+    <div class="w-full container-8x">
       <div class="flex items-end justify-between">
         <div v-for="stat in footer.stats" :key="stat.id">
           <p class="flex flex-col items-start justify-center gap-1">
@@ -15,10 +15,10 @@
 
         <div class="">
           <label
-            class="text-footer-text-color block text-3xl hover:text-white"
+            class="block text-3xl text-footer-text-color hover:text-white"
             >{{ footer.newsletter.CTA }}</label
           >
-          <div class="mt-4 flex gap-4">
+          <div class="flex gap-4 mt-4">
             <input
               type="text"
               :placeholder="footer.newsletter.placeholder"
@@ -34,14 +34,14 @@
           </div>
         </div>
       </div>
-      <div class="my-20 flex items-start justify-between tracking-wide">
+      <div class="flex items-start justify-between my-20 tracking-wide">
         <div v-for="column in footer.footerLinks" :key="column.id">
           <p class="mb-4 text-lg">
             {{ column.label }}
           </p>
           <ul v-for="link in column.links" :key="link.id" class="">
             <li
-              class="text-footer-text-color mt-2 text-sm text-white opacity-80 hover:opacity-100"
+              class="mt-2 text-sm text-white text-footer-text-color opacity-80 hover:opacity-100"
             >
               <a :href="link.url">
                 {{ link.label }}
@@ -53,21 +53,21 @@
     </div>
     <div class="h-[0.6px] w-full bg-white opacity-20"></div>
     <div class="mx-auto my-20">
-      <div class="flex-center flex-col gap-1">
+      <div class="flex-col gap-1 flex-center">
         <NuxtLink to="/">
-          <div class="flex-center flex-col gap-1 opacity-60 hover:opacity-100">
+          <div class="flex-col gap-1 flex-center opacity-60 hover:opacity-100">
             <img
               loading="lazy"
               :src="footer.logo"
               alt=""
-              class="logo-white w-10 cursor-pointer"
+              class="w-10 cursor-pointer logo-white"
             />
-            <h3 class="cursor-pointer text-xs tracking-wider">
+            <h3 class="text-xs tracking-wider cursor-pointer">
               {{ footer.title }}
             </h3>
           </div>
         </NuxtLink>
-        <div class="flex-center mt-4 gap-2">
+        <div class="gap-2 mt-4 flex-center">
           <div v-for="handle in footer.socialMedia" :key="handle.id">
             <FooterIcon
               :label="handle.label"

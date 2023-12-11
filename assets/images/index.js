@@ -2,6 +2,8 @@ export { default as logo } from './logo.png'
 
 // icons
 export { default as panelDropdownIcon } from './icons/panel-dropdown-icon.svg'
+export { default as checkIcon } from './icons/check-icon.svg'
+export { default as crossIcon } from './icons/cross-icon.svg'
 
 // quick-links
 export { default as dropdownIcon } from './quick-links/dropdown-icon.svg'

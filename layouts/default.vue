@@ -7,9 +7,9 @@
       >
         <transition name="fade">
           <div
-            class="w-full text-white transition-all duration-500 ease-in-out"
+            class="w-full text-white"
             :class="{
-              'border-b-[0.1px] border-b-white border-opacity-20': NavbarScroll
+              'border-b-[0.1px] border-b-white border-opacity-20': isPageScrolled
             }"
           >
             <Navbar
@@ -58,7 +58,7 @@ export default {
       activeId: 2111, // default id
       gradient: 'black-gradient', // default gradient
       searchClicked: false,
-      NavbarScroll: null
+      isPageScrolled: null
     }
   },
   computed: {
@@ -76,7 +76,7 @@ export default {
     handleScroll() {
       const scrollPosition =
         window.scrollY || document.documentElement.scrollTop
-      this.NavbarScroll = scrollPosition >= 20
+      this.isPageScrolled = scrollPosition >= 20
     },
     searchBtnClicked() {
       this.searchClicked = true
@@ -92,7 +92,7 @@ export default {
       }
     },
     activeClass(val) {
-      return this.NavbarScroll ? val : 'bg-transparent'
+      return this.isPageScrolled ? val : 'bg-transparent'
     },
     getRandomGradient() {
       const gradients = [

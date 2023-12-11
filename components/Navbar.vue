@@ -1,6 +1,6 @@
 <template>
-  <header class="container-10x w-full py-5">
-    <div class="flex w-full items-center justify-between">
+  <header class="w-full py-5 container-10x">
+    <div class="flex items-center justify-between w-full">
       <NuxtLink to="/">
         <div class="flex-center">
           <img
@@ -15,10 +15,13 @@
           </span>
         </div>
       </NuxtLink>
-      <nav class="flex gap-4">
+      <div @click="handleToasterBtnClick" class="rounded-full ">
+        <Button :text="toasterBtnText" :gradient="gradient" />
+      </div>
+      <nav class="relative flex gap-4">
         <ul v-for="links in quickLinks.links" :key="links.id">
           <li
-            class="flex-center min-w-lg relative cursor-pointer flex-col gap-2 text-xs"
+            class="relative flex-col gap-2 text-xs cursor-pointer flex-center min-w-lg"
             @click="handleDropdown(links)"
             @mouseover="activeId = links.id"
             @mouseleave="activeId = null"
@@ -36,7 +39,7 @@
             </span>
             <div
               v-if="activeId === links.id"
-              class="absolute top-12 cursor-default transition-all duration-500 ease-in-out"
+              class="absolute transition-all duration-500 ease-in-out cursor-default top-12"
             >
               <Dropdown
                 @grab-id="handleId"
@@ -46,18 +49,30 @@
             </div>
           </li>
         </ul>
+        <div class="absolute w-full h-full" v-if="openToaster">
+          <Toaster
+            :gradient="gradient"
+            @agreed="handleAgree"
+            @disagreed="handleDisagree"
+            @closeToaster="handleCloseToaster"
+          />
+        </div>
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import Button from '@/components/Button.vue'
 import Dropdown from '@/components/Dropdown.vue'
+import Toaster from '@/components/Toaster.vue'
 import { logo } from '@/assets/images'
 
 export default {
   components: {
-    Dropdown
+    Button,
+    Dropdown,
+    Toaster
   },
   props: {
     gradient: {
@@ -68,7 +83,8 @@ export default {
   data() {
     return {
       activeId: null,
-
+      toasterBtnText: 'See Updated TOS',
+      openToaster: false,
       logo
     }
   },
@@ -88,6 +104,27 @@ export default {
     handleId(id) {
       this.activeId = id
       this.$emit('grab-id', id)
+    },
+    handleToasterBtnClick() {
+      this.openToaster = true
+      console.log('clicked')
+    },
+    handleAgree() {
+      this.openToaster = false
+      this.toasterBtnText = 'Thank you! 🥰'
+      setTimeout(() => {
+        this.toasterBtnText = 'See Updated TOS Again'
+      }, 1500)
+    },
+    handleDisagree() {
+      this.openToaster = false
+      this.toasterBtnText = 'Our Bad! 😕'
+      setTimeout(() => {
+        this.toasterBtnText = 'See Updated TOS Again'
+      }, 1500)
+    },
+    handleCloseToaster(){
+      this.openToaster = false
     }
   }
 }
